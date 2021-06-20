@@ -8,7 +8,8 @@
     <div class="form-group d-flex">
     <div class="flex-fill">
     <select id="whichdate" class="form-control" v-model="selected_date" @change="selected">
-      <option value="" disabled selected>請選擇欲查詢的日期</option>
+      <option value="" disabled selected>
+        請選擇欲查詢的日期</option>
       <option :value="s.date" v-for="s in AllData" :key="s.date">{{s.date}}
       </option>
     </select>
@@ -491,7 +492,9 @@ export default {
           .bindPopup(`<strong>${this.selected_date} 連江縣新增確診數: ${this.DateData[21]}</strong>`);
       }
       L.marker([24.82692337542947, 121.77521968849491]).addTo(osmMap)
-        .bindPopup('<a href="https://bit.ly/3gGFTnW">♨️🔞TW ICE🔞♨️</a>');
+        .bindPopup('<a href="https://bit.ly/3gGFTnW">♨️🔞タイワーン・アイス🔞♨️</a>');
+      L.marker([25.00099382121128, 121.51070556582138]).addTo(osmMap)
+        .bindPopup('<a href="https://bit.ly/3gHqJPi">🏃‍♂️👣Tamale :D🥘💦</a>');
     },
   },
   components: {},

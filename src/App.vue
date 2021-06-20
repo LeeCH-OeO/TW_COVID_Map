@@ -12,8 +12,11 @@
       <option :value="s.date" v-for="s in AllData" :key="s.date">{{s.date}}
       </option>
     </select>
-    <button class="btn btn-outline-success btn-lg" :disabled='isDisable' @click="search">查詢</button>
-    <p class="text-center">test</p>
+    <button class="btn btn-success btn-lg" :disabled='isDisable' @click="search"
+    style="font-family: 'Noto Sans TC', sans-serif;">查詢</button>
+    <p class="text-center fs-1" style="font-family: 'Noto Serif TC', serif;">{{localCase}}</p>
+    <p class="text-center fs-1" style="font-family: 'Noto Serif TC', serif;">{{adjust}}</p>
+    <p class="text-center fs-1" style="font-family: 'Noto Serif TC', serif;">{{foreign}}</p>
     </div>
     </div>
     <div class="form-group d-flex">
@@ -44,6 +47,9 @@ export default {
     SelIndex: 0,
     DateData: [],
     isDisable: true,
+    localCase: '',
+    adjust: '',
+    foreign: '',
   }),
   methods: {
     selected() {
@@ -52,6 +58,10 @@ export default {
       this.DateData = AllData[this.SelIndex].data.slice(0, -3);
     },
     search() {
+      this.localCase = `本土新增: ${AllData[this.SelIndex].data[23]}`;
+      this.adjust = `校正回歸: ${AllData[this.SelIndex].data[22]}`;
+      this.foreign = `境外移入: ${AllData[this.SelIndex].data[24]}`;
+      console.log(this.localCase, this.adjust, this.foreign);
       const greenIcon = new L.Icon({
         iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
         shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
@@ -496,6 +506,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@900&display=swap');
 @import 'bootstrap/scss/bootstrap';
 #map{
  height: 100vh;

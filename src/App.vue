@@ -494,7 +494,7 @@ export default {
       L.marker([24.82692337542947, 121.77521968849491]).addTo(osmMap)
         .bindPopup('<a href="https://bit.ly/3gGFTnW">♨️🔞タイワーン・アイス🔞♨️</a>');
       L.marker([25.00099382121128, 121.51070556582138]).addTo(osmMap)
-        .bindPopup('<a href="https://bit.ly/3gHqJPi">🏃‍♂️👣Tamale :D🥘💦</a>');
+        .bindPopup('<a href="https://bit.ly/3gHqJPi">🏃‍♂️👣Tamale🥘💦</a>');
     },
   },
   components: {},

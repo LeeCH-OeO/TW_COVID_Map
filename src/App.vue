@@ -7,6 +7,8 @@
     <div class="sticky-top bg-white shadow-sm p-2">
     <div class="form-group d-flex">
     <div class="flex-fill">
+    <a href="https://github.com/LeeCH-OeO/TW_COVID_Map"><img src="https://img.shields.io/badge/Author-LeeCH-brightgreen">
+    </a>
     <select id="whichdate" class="form-control" v-model="selected_date" @change="selected">
       <option value="" disabled selected>
         請選擇欲查詢的日期</option>

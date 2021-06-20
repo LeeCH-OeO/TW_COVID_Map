@@ -490,8 +490,8 @@ export default {
           .addTo(osmMap)
           .bindPopup(`<strong>${this.selected_date} 連江縣新增確診數: ${this.DateData[21]}</strong>`);
       }
-      L.marker([33.26906266433787, 131.3673314216881]).addTo(osmMap)
-        .bindPopup('<a href="https://bit.ly/3gGFTnW">ゆふいんちょう</a>');
+      L.marker([24.82692337542947, 121.77521968849491]).addTo(osmMap)
+        .bindPopup('<a href="https://bit.ly/3gGFTnW">♨️🔞TW ICE🔞♨️</a>');
     },
   },
   components: {},

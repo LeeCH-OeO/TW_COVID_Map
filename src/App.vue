@@ -37,8 +37,10 @@
 import L from 'leaflet';
 import AllData from './assets/csvjson.json';
 
+if (navigator.maxTouchPoints > 1) {
+  alert('建議使用電腦以獲得最佳體驗');
+}
 let osmMap = {};
-
 export default {
   name: 'App',
   data: () => ({

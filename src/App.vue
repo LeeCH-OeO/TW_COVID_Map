@@ -101,9 +101,6 @@ export default {
       });
       this.isDisable = true;
       osmMap.closePopup();
-      if (this.selected_date === '2021/5/22') {
-        alert('本日各縣市資料包含校正回歸的數據');
-      }
       if (this.DateData[0] >= 100) {
         L.marker([25.037279468775033, 121.56443936595173], { icon: redIcon })
           .addTo(osmMap)

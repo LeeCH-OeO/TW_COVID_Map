@@ -4,7 +4,7 @@
     <div class="row no-gutters">
     <div class="col-sm-3">
     <div class="toolbox">
-    <div class="sticky-top bg-white shadow-sm p-2">
+    <div class="sticky-top bg-dark shadow-sm p-2">
     <div class="form-group d-flex">
     <div class="flex-fill">
     <a href="https://github.com/LeeCH-OeO/TW_COVID_Map"><img src="https://img.shields.io/badge/Author-LeeCH-brightgreen">
@@ -15,11 +15,14 @@
       <option :value="s.date" v-for="s in AllData" :key="s.date">{{s.date}}
       </option>
     </select>
-    <button class="btn btn-success btn-lg" :disabled='isDisable' @click="search"
+    <button class="btn btn-outline-danger btn-lg" :disabled='isDisable' @click="search"
     style="font-family: 'Noto Sans TC', sans-serif;">查詢</button>
-    <p class="text-center fs-1" style="font-family: 'Noto Serif TC', serif;">{{localCase}}</p>
-    <p class="text-center fs-1" style="font-family: 'Noto Serif TC', serif;">{{adjust}}</p>
-    <p class="text-center fs-1" style="font-family: 'Noto Serif TC', serif;">{{foreign}}</p>
+    <p class="text-center fs-1" style="font-family: 'Noto Serif TC', serif; color:red;">
+      {{localCase}}</p>
+    <p class="text-center fs-1" style="font-family: 'Noto Serif TC', serif; color:red">
+      {{adjust}}</p>
+    <p class="text-center fs-1" style="font-family: 'Noto Serif TC', serif; color:red">
+      {{foreign}}</p>
     </div>
     </div>
     <div class="form-group d-flex">

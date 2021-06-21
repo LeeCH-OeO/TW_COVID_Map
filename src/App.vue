@@ -41,7 +41,7 @@ import L from 'leaflet';
 import AllData from './assets/csvjson.json';
 
 if (navigator.maxTouchPoints > 1) {
-  alert('建議使用電腦以獲得最佳體驗');
+  alert('您正在使用手機📱瀏覽\n建議使用電腦🖥️以獲得最佳體驗');
 }
 let osmMap = {};
 export default {
